@@ -15,8 +15,8 @@ https://github.com/deter0/xborderhttps://github.com/deter0/xborder
 used with i3 and picom to have a colored border around the active window
 
 #### Fonts
-Roboto
-FiraCode Nerd Font
+* Roboto
+* FiraCode Nerd Font
 
 #### Autorandr
 autorandr to help with handling docking and undocking from external display
