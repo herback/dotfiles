@@ -1,0 +1,14 @@
+configuration {
+    show-icons: true;
+
+    display-ssh:    "󰣀 ssh:";
+    display-run:    "󱓞 run:";
+    display-drun:   "Sök:";
+    display-window: "Workspaces:";
+    display-combi:  "󰕘 combi:";
+    display-filebrowser: "󰉋 filebrowser:";
+
+    font: "Roboto Medium 14";
+}
+
+@theme "~/.config/rofi/catppuccin-lavrent-mocha.rasi"
