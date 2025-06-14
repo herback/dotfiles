@@ -14,7 +14,7 @@ as well as:
 https://github.com/deter0/xborderhttps://github.com/deter0/xborder
 used with i3 and picom to have a colored border around the active window
 
-### Autotiling
+#### Autotiling
 https://github.com/nwg-piotr/autotiling
 used with i3 to arrange the windows better
 
@@ -25,3 +25,8 @@ used with i3 to arrange the windows better
 #### Autorandr
 autorandr to help with handling docking and undocking from external display
 
+#### Flameshot
+used for screenshots
+
+#### Feh
+set up wallpapers
