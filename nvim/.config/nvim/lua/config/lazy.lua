@@ -27,9 +27,3 @@ require("lazy").setup({
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
-
-require("catppuccin").setup({
-flavour = "mocha",
-transparent_background = true
-})
-vim.cmd.colorscheme "catppuccin"
