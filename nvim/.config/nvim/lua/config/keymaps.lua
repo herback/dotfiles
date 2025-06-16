@@ -11,15 +11,15 @@ local function setup_keymaps()
   vim.keymap.set("n", "<leader>fg", function()
     require("telescope.builtin").live_grep()
   end, { desc = "Live Grep" })
-end
 
--- Lsp-config
-vim.keymap.set("n", "K", function()
-  vim.lsp.buf.hover({
-    border = "rounded",
-    max_width = 80,
-  })
-end)
-vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
+  -- Lsp-config
+  vim.keymap.set("n", "K", function()
+    vim.lsp.buf.hover({
+      border = "rounded",
+      max_width = 80,
+    })
+  end)
+  vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
   vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+end
 setup_keymaps()
