@@ -20,6 +20,7 @@ local function setup_keymaps()
     })
   end)
   vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
+  vim.keymap.set('n', '<leader>gr', vim.lsp.buf.references, {})
   vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
 end
 setup_keymaps()

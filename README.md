@@ -1,5 +1,13 @@
 ## Dependencies
 
+### general
+install and use the following programs:
+* neovim
+* kitty
+* bash
+* starship (makes shell line look goood)
+* fastfetch (make terminal startinfo look good)
+
 ### i3
 
 To set up i3 we need to install
