@@ -11,3 +11,4 @@ PS1='[\u@\h \W]\$ '
 fastfetch
 
 eval "$(starship init bash)"
+source /usr/share/nvm/init-nvm.sh
