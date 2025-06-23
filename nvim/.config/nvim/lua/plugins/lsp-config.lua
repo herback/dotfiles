@@ -8,6 +8,7 @@ return {
 		opts = {
 			ensure_installed = {
 				"lua_ls",
+        "eslint"
 			},
 		},
 		dependencies = {
@@ -33,7 +34,6 @@ return {
 			ensure_installed = {
 				"stylua",
         "prettier",
-        "eslint_d",
 			},
 			auto_update = true,
 		},
