@@ -32,3 +32,6 @@ require("lazy").setup({
 })
 
 require('config.keymaps')
+
+-- Enable showkeys to display vim motions
+vim.cmd("ShowkeysToggle")
