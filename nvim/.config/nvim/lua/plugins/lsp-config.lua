@@ -1,7 +1,11 @@
 return {
 	{
 		"mason-org/mason.nvim",
-		opts = {},
+		opts = {
+			ui = {
+				border = "rounded",
+			},
+		},
 	},
 	{
 		"mason-org/mason-lspconfig.nvim",
@@ -10,6 +14,7 @@ return {
 			ensure_installed = {
 				"ts_ls",
 				"eslint",
+				"lua_ls",
 			},
 		},
 		dependencies = {
@@ -19,9 +24,9 @@ return {
 	},
 	{
 		"nvim-lspconfig",
-    dependencies = {
-      "saghen/blink.cmp",
-    },
+		dependencies = {
+			"saghen/blink.cmp",
+		},
 		config = function()
 			local capabilities = require("blink.cmp").get_lsp_capabilities()
 

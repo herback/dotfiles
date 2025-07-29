@@ -9,12 +9,9 @@ return {
 			custom_highlights = function(colors)
 				return {
 					NormalFloat = {
-						bg = colors.mantle,
 						fg = colors.mauve,
 					},
 					FloatBorder = { fg = colors.mauve },
-					Pmenu = { bg = colors.mantle },
-					PmenuSel = { bg = colors.surface0 },
 				}
 			end,
 			compile = {

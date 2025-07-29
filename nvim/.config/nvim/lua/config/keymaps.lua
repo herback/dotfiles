@@ -7,7 +7,6 @@ local function setup_keymaps()
 	-- show description
 	vim.keymap.set("n", "K", function()
 		vim.lsp.buf.hover({
-			border = "rounded",
 			max_width = 80,
 		})
 	end, { desc = "Show documentation" })

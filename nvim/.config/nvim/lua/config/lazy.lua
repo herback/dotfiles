@@ -31,7 +31,15 @@ require("lazy").setup({
 	checker = { enabled = true },
 })
 
-require('config.keymaps')
+-- Close Lazy window with Esc
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "lazy",
+	callback = function()
+		vim.keymap.set("n", "<Esc>", "<cmd>close<cr>", { buffer = true, nowait = true })
+	end,
+})
+
+require("config.keymaps")
 
 -- Enable showkeys to display vim motions
 vim.cmd("ShowkeysToggle")

@@ -9,33 +9,33 @@ return {
 			keymap = { preset = "default" },
 			appearance = {
 				nerd_font_variant = "mono",
-
 			},
 			completion = {
-        menu = {
-          border = "rounded",
-          winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None",
-        },
+				menu = {
+					border = "rounded",
+					winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None",
+				},
 				documentation = {
 					auto_show = true,
-          auto_show_delay_ms = 0,
+					auto_show_delay_ms = 0,
 					treesitter_highlighting = true,
-          window = {
-            border = "rounded",
-          },
+					window = {
+						border = "rounded",
+					},
 				},
 				accept = {
 					auto_brackets = {
 						enabled = true,
 					},
 				},
-				sources = {
-					default = { "lsp", "path", "snippets", "buffer" },
-				},
-				fuzzy = { implementation = "prefer_rust_with_warning" },
-				signature = { enabled = true },
 			},
-			opts_extend = { "sources.default" },
+			sources = {
+				default = { "lsp", "path", "snippets", "buffer" },
+			},
+			fuzzy = { implementation = "prefer_rust_with_warning" },
+			signature = { enabled = true },
 		},
+
+		opts_extend = { "sources.default" },
 	},
 }
