@@ -10,8 +10,12 @@ return {
 				return {
 					NormalFloat = {
 						fg = colors.mauve,
+						bg = "NONE",
 					},
-					FloatBorder = { fg = colors.mauve },
+					FloatBorder = {
+						fg = colors.mauve,
+						bg = "NONE",
+					},
 				}
 			end,
 			compile = {
