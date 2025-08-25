@@ -1,0 +1,97 @@
+// ~/.config/waybar/config.jsonc
+{
+  "height": 30,
+  "spacing": 1,
+
+  "modules-left": [
+    "custom/arch",
+    "hyprland/workspaces",
+    "custom/separator",
+    "hyprland/window",
+  ],
+
+  "modules-center": ["clock"],
+
+  "modules-right": [
+    "pulseaudio",
+    "battery",
+    "bluetooth",
+    "network",
+    "custom/power",
+    "tray",
+  ],
+
+  "custom/arch": {
+    "format": " 󰣇",
+    "tooltip": false,
+  },
+
+  "custom/separator": {
+    "format": "❯",
+    "tooltip": false,
+  },
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{name}",
+  },
+
+  "hyprland/window": {
+    "format": "  {}",
+    "max-length": 50,
+  },
+
+  "clock": {
+    "format": "{:%a, %d %b %Y  |  %H:%M:%S}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+  },
+
+  "bluetooth": {
+	"format": "",
+	"format-disabled": "󰂲", // an empty format will hide the module
+	"tooltip-format": "{controller_alias}\t{controller_address}",
+	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+  },
+
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-icons": ["", "", ""],
+    "format-muted": "",
+    "on-click": "pavucontrol",
+    "tooltip-format": "Volume: {volume}%, {desc}",
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 10,
+    },
+    "events": {
+      "on-discharging-warning": "notify-send -u normal 'Low Battery'",
+      "on-discharging-critical": "notify-send -u critical 'Very Low Battery'",
+    },
+    "format": "{icon}",
+    "format-icons": ["", "", "", "", ""],
+    "format-charging": "󱐋",
+    "tooltip-format": "{capacity}%, empty in {time}",
+  },
+
+  "network": {
+    "format-wifi": " ",
+    "format-ethernet": "{ifname}   ",
+    "format-disconnected": "󰤮 ",
+    "format-airplane": "󰀝 Airplane Mode",
+    "tooltip-format": "{essid}, {signalStrength}% signal\nup: {bandwidthUpBytes}, down: {bandwidthDownBytes}\n{ifname} via {gwaddr}",
+  },
+
+  "custom/power": {
+    "format": " ",
+    "tooltip": false,
+  },
+
+  "tray": {
+    "spacing": 8,
+  },
+}

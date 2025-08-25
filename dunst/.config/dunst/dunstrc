@@ -1,0 +1,17 @@
+[global]
+font = Roboto 10
+frame_color = "#cba6f7"
+separator_color= frame
+highlight = "#cba6f7"
+background = "#1e1e2eCC"
+corner_radius = 12
+
+[urgency_low]
+foreground = "#cdd6f4"
+
+[urgency_normal]
+foreground = "#cdd6f4"
+
+[urgency_critical]
+foreground = "#cdd6f4"
+frame_color = "#fab387"

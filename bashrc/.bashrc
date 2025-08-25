@@ -12,3 +12,6 @@ fastfetch
 
 eval "$(starship init bash)"
 source /usr/share/nvm/init-nvm.sh
+
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
