@@ -8,7 +8,7 @@
 
 window#waybar {
   background: @base;
-  color: @subtext0;
+  color: @overlay0;
   padding: 4px 10px;
     border-bottom: 2px solid @mauve;
 }

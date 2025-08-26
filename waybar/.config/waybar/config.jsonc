@@ -45,14 +45,15 @@
   "clock": {
     "format": "{:%a, %d %b %Y  |  %H:%M:%S}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "interval": 1,
   },
 
   "bluetooth": {
-	"format": "",
-	"format-disabled": "󰂲", // an empty format will hide the module
-	"tooltip-format": "{controller_alias}\t{controller_address}",
-	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
-	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    "format": "",
+    "format-disabled": "󰂲", // an empty format will hide the module
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
   },
 
   "pulseaudio": {
@@ -89,6 +90,7 @@
   "custom/power": {
     "format": " ",
     "tooltip": false,
+    "on-click": "~/.config/waybar/scripts/power-menu.sh",
   },
 
   "tray": {
