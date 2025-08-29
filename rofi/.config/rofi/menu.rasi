@@ -1,0 +1,34 @@
+@import "catppuccin-lavrent-mocha.rasi"
+
+* {
+    /* Positioning */
+    location: northeast;
+    anchor: northeast;
+    x-offset: 0px;
+    y-offset: 0px;
+    
+    /* Appearance */
+    font: "Roboto Medium 8";
+    show-icons: true;
+}
+
+window {
+    border: 0px 2px 2px 2px;
+    border-radius: 0px 0px 0px 5px;
+    padding: -2px;
+  border-right: 0px;
+    width: 200;
+    height: 400;
+
+}
+    element {
+   // padding: 5;
+    vertical-align: 0.5;
+   // border-radius: 10;
+    background-color: inherit;
+}
+
+
+listview {
+    scrollbar: false;
+}

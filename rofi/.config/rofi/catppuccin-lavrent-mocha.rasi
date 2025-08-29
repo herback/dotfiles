@@ -25,7 +25,7 @@ window {
 
     border: 3;
     border-radius: 10;
-    border-color: @lavender;
+    border-color: @mauve;
 }
 
 mainbox {
@@ -73,19 +73,18 @@ prompt {
 element {
     padding: 5;
     vertical-align: 0.5;
-    border-radius: 10;
-    background-color: @surface0;
-}
-
-element.selected.normal {
-    background-color: @overlay0;
-}
-
-element.alternate.normal {
+   // border-radius: 10;
     background-color: inherit;
 }
 
-element.normal.active, element.alternate.active {
+element.selected.normal {
+    background-color: @mauve;
+    text-color: @base;
+}
+
+
+
+element.normal.active {
     background-color: @peach;
 }
 

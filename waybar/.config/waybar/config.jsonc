@@ -85,6 +85,7 @@
     "format-disconnected": "󰤮 ",
     "format-airplane": "󰀝 Airplane Mode",
     "tooltip-format": "{essid}, {signalStrength}% signal\nup: {bandwidthUpBytes}, down: {bandwidthDownBytes}\n{ifname} via {gwaddr}",
+    "on-click": "~/.config/waybar/scripts/wifi-menu.sh",
   },
 
   "custom/power": {
