@@ -40,6 +40,3 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 require("config.keymaps")
-
--- Enable showkeys to display vim motions
-vim.cmd("ShowkeysToggle")

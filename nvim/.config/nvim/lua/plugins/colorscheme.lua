@@ -3,19 +3,27 @@ return {
 	name = "catppuccin",
 	priority = 1000,
 	config = function()
+		local colors = require("catppuccin.palettes").get_palette("mocha")
+		local mauveHighlight = {
+			fg = colors.mauve,
+			bg = "NONE",
+		}
 		require("catppuccin").setup({
-			flavour = "mocha",
 			transparent_background = true,
-			custom_highlights = function(colors)
+			flavour = "mocha",
+			custom_highlights = function()
 				return {
-					NormalFloat = {
-						fg = colors.mauve,
-						bg = "NONE",
-					},
-					FloatBorder = {
-						fg = colors.mauve,
-						bg = "NONE",
-					},
+					NormalFloat = mauveHighlight,
+					FloatBorder = mauveHighlight,
+					FloatTitle = mauveHighlight,
+					DiagnosticSignInfo = mauveHighlight,
+					DiagnosticSignHint = mauveHighlight,
+					DiagnosticSignOk = mauveHighlight,
+					DiagnosticInfo = mauveHighlight,
+					DiagnosticHint = mauveHighlight,
+					NotifyINFOTitle = mauveHighlight,
+					NotifyINFOBorder = mauveHighlight,
+					NotifyINFOIcon = mauveHighlight,
 				}
 			end,
 			compile = {

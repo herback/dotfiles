@@ -64,4 +64,4 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 -- Create Float window groups to add border color
-vim.o.winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder"
+--vim.o.winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder,FloatTitle:FloatTitle"

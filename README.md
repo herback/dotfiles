@@ -30,10 +30,6 @@ used with i3 and picom to have a colored border around the active window
 https://github.com/nwg-piotr/autotiling
 used with i3 to arrange the windows better
 
-#### Fonts
-* Roboto
-* FiraCode Nerd Font
-
 #### Autorandr
 autorandr to help with handling docking and undocking from external display
 
@@ -54,4 +50,5 @@ to set up hyprland we need to install
 * dunst (notification daemon)
 * imagemagick
 * [xsel] (https://gist.github.com/NotAShelf/07a455e676f0e4af802a83cfc4ef98b9)
+* catppuccin-gtk-theme-mocha
 
