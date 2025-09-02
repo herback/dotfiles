@@ -8,6 +8,11 @@ return {
 			fg = colors.mauve,
 			bg = "NONE",
 		}
+		local textHighlight = {
+			fg = colors.text,
+			bg = "NONE",
+		}
+
 		require("catppuccin").setup({
 			transparent_background = true,
 			flavour = "mocha",
@@ -15,7 +20,6 @@ return {
 				return {
 					NormalFloat = mauveHighlight,
 					FloatBorder = mauveHighlight,
-					FloatTitle = mauveHighlight,
 					DiagnosticSignInfo = mauveHighlight,
 					DiagnosticSignHint = mauveHighlight,
 					DiagnosticSignOk = mauveHighlight,
@@ -24,6 +28,9 @@ return {
 					NotifyINFOTitle = mauveHighlight,
 					NotifyINFOBorder = mauveHighlight,
 					NotifyINFOIcon = mauveHighlight,
+
+
+					FloatTitle = textHighlight,
 				}
 			end,
 			compile = {

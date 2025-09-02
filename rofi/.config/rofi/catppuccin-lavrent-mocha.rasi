@@ -79,7 +79,6 @@ element {
 
 element.selected.normal {
     background-color: @mauve;
-    text-color: @base;
 }
 
 
@@ -108,6 +107,6 @@ element-text, element-icon {
     text-color: @text;
 }
 
-element-text .active, element-text .urgent {
+element-text .active, element-text .urgent, element-text .selected.normal {
     text-color: @base;
 }
