@@ -8,21 +8,21 @@ return {
 			function()
 				require("fzf-lua").files()
 			end,
-			desc = "Find files in current working directory",
+			desc = "[F]ind [F]iles in current working directory",
 		},
 		{
 			"<leader>fg",
 			function()
 				require("fzf-lua").live_grep()
 			end,
-			desc = "Find by grepping in project directory",
+			desc = "[F]ind by [G]repping in project directory",
 		},
 		{
 			"<leader>fc",
 			function()
 				require("fzf-lua").files({ cwd = vim.fn.stdpath("config") })
 			end,
-			desc = "Find in neovim configuration",
+			desc = "[F]ind in neovim [C]onfiguration",
 		},
 		{
 			"<leader>fh",
@@ -85,7 +85,7 @@ return {
 			function()
 				require("fzf-lua").buffers()
 			end,
-			desc = "[,] Find existing buffers",
+			desc = "[ ] Find existing buffers",
 		},
 		{
 			"<leader>/",

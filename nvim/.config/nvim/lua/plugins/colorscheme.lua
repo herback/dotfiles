@@ -20,8 +20,8 @@ return {
 				return {
 					NormalFloat = mauveHighlight,
 					FloatBorder = mauveHighlight,
-					DiagnosticSignInfo = mauveHighlight,
 					DiagnosticSignHint = mauveHighlight,
+					DiagnosticSignInfo = mauveHighlight,
 					DiagnosticSignOk = mauveHighlight,
 					DiagnosticInfo = mauveHighlight,
 					DiagnosticHint = mauveHighlight,
@@ -31,6 +31,7 @@ return {
 
 
 					FloatTitle = textHighlight,
+					NoiceCmdLinePopupTitleCmdline = textHighlight,
 				}
 			end,
 			compile = {
