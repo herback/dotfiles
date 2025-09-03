@@ -84,7 +84,7 @@ return {
 
 				-- WARN: This is not Goto Definition, this is Goto Declaration.
 				--  For example, in C this would take you to the header.
-				map("<leader>gd",  require("fzf-lua").lsp_declarations, "[G]oto [D]eclaration")
+				map("<leader>gd", require("fzf-lua").lsp_declarations, "[G]oto [D]eclaration")
 
 				-- Fuzzy find all the symbols in your current document.
 				--  Symbols are things like variables, functions, types, etc.
@@ -100,7 +100,7 @@ return {
 				map("<leader>ct", require("fzf-lua").lsp_typedefs, "[C]ode [T]ype Definition")
 
 				-- Show documentation
-				map("K", vim.lsp.buf.hover, "Show documentation", {"n"})
+				map("K", vim.lsp.buf.hover, "Show documentation", { "n" })
 
 				-- This function resolves a difference between neovim nightly (version 0.11) and stable (version 0.10)
 				---@param client vim.lsp.Client
@@ -245,6 +245,10 @@ return {
 		local ensure_installed = vim.tbl_keys(servers or {})
 		vim.list_extend(ensure_installed, {
 			"stylua", -- Used to format Lua code
+			"prettierd", -- Used to format JavaScript and TypeScript code
+			"prettier", -- Used to format JavaScript and TypeScript code
+			"isort", -- Used to format Python code
+			"black", -- Used to format Python code
 		})
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
