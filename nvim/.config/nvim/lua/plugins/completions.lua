@@ -6,7 +6,7 @@ return {
 		version = "1.*",
 
 		opts = {
-			keymap = { preset = "default" },
+			keymap = { preset = "enter", ["<Tab>"] = { "accept", "fallback" } },
 			appearance = {
 				nerd_font_variant = "mono",
 			},
