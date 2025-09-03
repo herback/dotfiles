@@ -10,7 +10,7 @@ window#waybar {
   background: @base;
   color: @overlay0;
   padding: 4px 10px;
-    border-bottom: 2px solid @mauve;
+  border-bottom: 2px solid @mauve;
 }
 
 /* Workspaces */
@@ -37,22 +37,40 @@ window#waybar {
 }
 
 /* Modules */
-#pulseaudio,
-#network,
-#bluetooth,
+#pulseaudio {
+  padding: 0 6px;
+  color: @peach;
+}
+#network {
+  padding: 0 6px;
+  color: @green;
+}
+#bluetooth {
+  padding: 0 6px;
+  color: @yellow;
+}
 #battery {
   padding: 0 6px;
-  color: @text;
+  color: @sapphire;
 }
 
-#custom-arch,
-#custom-power {
+#custom-arch {
   padding: 0 6px;
   color: @blue;
 }
 
+#custom-power {
+  padding: 0 6px;
+  color: @lavender;
+}
+
 #clock {
   color: @text;
+}
+
+#custom-search {
+  padding: 0 6px;
+  color: @red;
 }
 
 /* Separators */

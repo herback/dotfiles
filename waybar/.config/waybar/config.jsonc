@@ -13,10 +13,11 @@
   "modules-center": ["clock"],
 
   "modules-right": [
+    "custom/search",
     "pulseaudio",
-    "battery",
     "bluetooth",
     "network",
+    "battery",
     "custom/power",
     "tray",
   ],
@@ -45,7 +46,11 @@
   "clock": {
     "format": "{:%a, %d %b %Y  |  %H:%M:%S}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "interval": 1,
+  },
+
+  "custom/search": {
+    "format": "",
+    "on-click": "rofi -show drun",
   },
 
   "bluetooth": {
@@ -75,12 +80,13 @@
     },
     "format": "{icon}",
     "format-icons": ["", "", "", "", ""],
-    "format-charging": "󱐋",
+    "format-charging": "󰢞",
     "tooltip-format": "{capacity}%, empty in {time}",
   },
 
   "network": {
-    "format-wifi": " ",
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-wifi": "{icon}",
     "format-ethernet": "{ifname}   ",
     "format-disconnected": "󰤮 ",
     "format-airplane": "󰀝 Airplane Mode",

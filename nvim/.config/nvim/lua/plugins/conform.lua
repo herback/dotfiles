@@ -5,8 +5,18 @@ return {
 			lua = { "stylua" },
 			-- Conform will run multiple formatters sequentially
 			python = { "isort", "black" },
-			-- Conform will run the first available formatter
-			javascript = { "prettierd", "prettier", stop_after_first = true },
+			javascript = { "prettier" },
+			typescript = { "prettier" },
+			javascriptreact = { "prettier" },
+			typescriptreact = { "prettier" },
+			svelte = { "prettier" },
+			css = { "prettier" },
+			html = { "prettier" },
+			json = { "prettier" },
+			jsonc = { "prettier" },
+			yaml = { "prettier" },
+			markdown = { "prettier" },
+			graphql = { "prettier" },
 		},
 		format_on_save = {
 			-- These options will be passed to conform.format()
