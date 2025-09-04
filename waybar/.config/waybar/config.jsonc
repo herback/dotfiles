@@ -13,13 +13,13 @@
   "modules-center": ["clock"],
 
   "modules-right": [
+    "tray",
     "custom/search",
     "pulseaudio",
     "bluetooth",
     "network",
     "battery",
     "custom/power",
-    "tray",
   ],
 
   "custom/arch": {
