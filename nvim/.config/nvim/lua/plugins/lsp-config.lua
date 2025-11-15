@@ -213,6 +213,7 @@ return {
 		local servers = {
 			bashls = {},
 			marksman = {},
+			jdtls = {},
 			lua_ls = {
 				-- cmd = { ... },
 				-- filetypes = { ... },

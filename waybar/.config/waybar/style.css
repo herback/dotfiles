@@ -37,18 +37,25 @@ window#waybar {
 }
 
 /* Modules */
+#language {
+  font-size: 12px;
+}
+
 #pulseaudio {
   padding: 0 6px;
   color: @peach;
 }
+
 #network {
   padding: 0 6px;
   color: @green;
 }
+
 #bluetooth {
   padding: 0 6px;
   color: @yellow;
 }
+
 #battery {
   padding: 0 6px;
   color: @sapphire;

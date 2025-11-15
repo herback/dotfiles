@@ -29,7 +29,6 @@ return {
 					NotifyINFOBorder = mauveHighlight,
 					NotifyINFOIcon = mauveHighlight,
 
-
 					FloatTitle = textHighlight,
 					NoiceCmdLinePopupTitleCmdline = textHighlight,
 				}
